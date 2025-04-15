@@ -1,0 +1,60 @@
+.fondo-diagonal {
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+    height: 450px;
+    width: 100%;
+  }
+  
+  .fondo-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.9;
+  }
+  
+  /* Capa 1 */
+  .img1 {
+    background-image: url('image/tlou2.jpg');
+    clip-path: polygon(0 0, 33% 0, 25% 100%, 0% 100%);
+  }
+  
+  /* Capa 2 */
+  .img2 {
+    background-image: url('image/gta_VI.jpg');
+    clip-path: polygon(25% 0, 66% 0, 58% 100%, 33% 100%);
+  }
+  
+  /* Capa 3 */
+  .img3 {
+    background-image: url('image/no-mans-sky.jpg');
+    clip-path: polygon(58% 0, 100% 0, 100% 100%, 66% 100%);
+  }
+  
+  /* Para que el contenido esté encima */
+  .z-1 {
+    z-index: 1;
+  }
+  .imagen {
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+    transition-delay: 0.3s;
+    transform: scale(0.5);
+  }
+  
+  .imagen.visible {
+    opacity: 1;
+    transform: scale(1);
+  }
+.imagen:hover {
+    opacity: 1;
+    transform: scale(1.5);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+
+  
+  
